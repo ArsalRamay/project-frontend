@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  background-color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f3f3f3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+  padding: 20px;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+.pro .new {
+  font-size: 10px;
+  background: #6c63ff;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 4px;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.login {
+  background: transparent;
+  border: 1px solid #ccc;
+}
+
+.signup {
+  background: black;
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+}
+
+.hero {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 2;
+  min-width: 400px;
+  justify-content: left;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.hero-buttons button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.download {
+  background: black;
+  color: white;
+}
+
+.github {
+  background: #eee;
+}
+
+.hero-image img {
+  width: 300px;
+  max-width: 100%;
+}
+
+.features {
+  text-align: center;
+  padding: 60px 10%;
+}
+
+.features h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.features p {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.feature-box {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.feature-box img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.feature-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cta {
+  text-align: center;
+  background: #111;
+  color: white;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin: 50px 10%;
+}
+
+.cta button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 25px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .nav-links,
+  .auth-buttons {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    margin: 30px 5%;
+  }
+}

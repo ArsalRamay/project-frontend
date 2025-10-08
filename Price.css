@@ -1,0 +1,213 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  justify-content: space-between;
+  text-decoration: none;
+ 
+
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links a:hover {
+  color: black;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: white;
+  min-width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: #f3f3f3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.login {
+  background: transparent;
+  border: 1px solid #ccc;
+}
+
+.signup {
+  background: black;
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+
+.pricing {
+  text-align: center;
+  padding: 60px 10%;
+ 
+
+  
+}
+
+.pricing h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.pricing p {
+  color: #555;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.plan {
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  background: #fff;
+}
+
+.plan h3 {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.plan h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.plan ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.plan ul li {
+  margin: 8px 0;
+  color: #333;
+}
+
+
+.btn-outline,
+.btn-black {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-black {
+  background: black;
+  color: white;
+  border: none;
+}
+
+.btn-outline:hover {
+  background: #f0f0f0;
+}
+
+.btn-black:hover {
+  opacity: 0.9;
+}
+
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links,
+  .auth-buttons {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+  }
+
+  .plan {
+    text-align: center;
+  }
+}
