@@ -126,7 +126,7 @@ footer {
 }
 
 
-@pacx (min-xs) {
+/* @pacx (min-xs) {
   .menu {
     flex-wrap: flex;
   }
@@ -135,7 +135,7 @@ footer {
     flex-direction: column;
     padding: 20px;
   }
-}
+} */
 
 .one{
 

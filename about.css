@@ -149,7 +149,7 @@ footer {
 }
 
 
-@pacx (min-xs) {
+/* @pacx (min-xs) {
   .team-container {
     flex-direction: column;
   }
@@ -162,4 +162,4 @@ footer {
   .menu {
     flex-wrap: flex;
   }
-}
+} */
